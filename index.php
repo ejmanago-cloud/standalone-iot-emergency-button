@@ -31,9 +31,24 @@
 
         /* MAIN */
         .container {
-            width: 90%;
-            max-width: 900px;
-            margin: 30px auto;
+            width: 100%;
+            margin: 0;
+            position: relative;
+        }
+
+        #emergencyList {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+
+            width: 350px;
+
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+              max-height: calc(100vh - 100px);
+            overflow-y: auto;
         }
 
         /* EMERGENCY ITEM */
